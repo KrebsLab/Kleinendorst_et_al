@@ -1,11 +1,16 @@
-Kleinendorst\_et\_al
-================
-GuidoBarzaghi
-18/07/2021
+---
+title: "Kleinendorst_et_al"
+author: "GuidoBarzaghi"
+date: "18/07/2021"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
 
 Fig.2
-
-``` r
+```{r, fig.width=12}
 library(BSgenome.Mmusculus.UCSC.mm10)
 library(tidyverse)
 
@@ -65,11 +70,8 @@ rbind(SE_TFBSs, DE_TFBSs, Tot_TFBSs) %>%
   theme_classic()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-
 Fig.3
-
-``` r
+```{r, fig.width=12, fig.height=6}
 library(SingleMoleculeFootprinting)
 library(BSgenome)
 library(tidyverse)
@@ -150,11 +152,8 @@ Summarised_Plotting_DF %>%
   scale_fill_manual(values = rev(c(RColorBrewer::brewer.pal(name = "Reds", n=9), "black")))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
-
 Fig.6
-
-``` r
+```{r, fig.width=12, fig.height=6}
 library(SingleMoleculeFootprinting) # for this use the dev version https://github.com/Krebslabrep/SingleMoleculeFootprinting/tree/dev
 library(ggplot2)
 library(tidyverse)
@@ -217,10 +216,5 @@ Results$MSE_DF %>%
 cowplot::plot_grid(pl1, pl2, nrow = 1, align = "none")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
-
-Fig.7 The right panels in Fig.7 was produced as shown in the
-[vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/SingleMoleculeFootprinting/inst/doc/SingleMoleculeFootprinting.html)
-of the BiocStyle::Biocpkg(pkg = “SingleMoleculeFootprinting”)
-Bioconductor package. The left panel of the same figure was produced
-using analogous code on a bait capture dataset.
+Fig.7
+The right panels in Fig.7 was produced as shown in the [vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/SingleMoleculeFootprinting/inst/doc/SingleMoleculeFootprinting.html) of the BiocStyle::Biocpkg(pkg = "SingleMoleculeFootprinting") Bioconductor package. The left panel of the same figure was produced using analogous code on a bait capture dataset.
