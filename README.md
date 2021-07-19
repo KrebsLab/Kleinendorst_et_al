@@ -223,6 +223,7 @@ Fig.7
 
 The right panels in Fig.7 was produced as shown in the
 [vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/SingleMoleculeFootprinting/inst/doc/SingleMoleculeFootprinting.html)
-of the `BiocStyle::Biocpkg(pkg = "SingleMoleculeFootprinting")`
+of the
+[SingleMoleculeFootprinting](https://www.bioconductor.org/packages/release/bioc/html/SingleMoleculeFootprinting.html)
 Bioconductor package. The left panel of the same figure was produced
 using analogous code on a bait capture dataset.
